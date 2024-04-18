@@ -1,5 +1,6 @@
 import modelos.Aluno;
 
+
 public class Exercicio1 {
 
     public static void executar() {
