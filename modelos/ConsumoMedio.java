@@ -7,19 +7,27 @@ public class ConsumoMedio {
 
 
     public ConsumoMedio (Double distPerc, Double combGasto) {
-    this.distPerc = distPerc;
-    this.combGasto = combGasto;
-}
+        this.distPerc = distPerc;
+        this.combGasto = combGasto;
+    }
 
-    private Double ConsumoMedio(){
+    public Double getdistPerc(){
+        return distPerc;
+    }
+
+    public Double getcombGasto(){
+        return combGasto;
+
+    }
+    private Double CalcConsumoMedio(){
         double ConsumoMedio = 0;
         ConsumoMedio = distPerc / combGasto;
     
         return ConsumoMedio;
     }
     
-    public Double getConsumoMedio(){
-        return ConsumoMedio();
+    public Double getCalcConsumoMedio(){
+        return CalcConsumoMedio();
     }
 }
 
