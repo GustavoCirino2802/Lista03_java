@@ -4,7 +4,7 @@ public class Conversao {
 
     private Double quantReal;
     private Double quantDolar;
-    private Double cotacao = 5.24; 
+    private Double cotacao; 
 
     public Conversao(Double quantReal, Double quantDolar, Double cotacao){
         this.quantReal = quantReal;
@@ -22,6 +22,16 @@ public class Conversao {
 
     public Double getcotacao(){
         return cotacao;
+    }
+
+    private Double calcQuantReal(){
+        double calcQuantReal = 0;
+        calcQuantReal = (quantDolar * cotacao);
+        return calcQuantReal; 
+    }
+    
+    public Double getcalcQuantReal(){
+        return calcQuantReal();
     }
 
 }
