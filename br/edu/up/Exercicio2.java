@@ -1,4 +1,5 @@
-import modelos.ConsumoMedio;
+package br.edu.up;
+import br.edu.up.modelos.ConsumoMedio;
 
 public class Exercicio2 {
 

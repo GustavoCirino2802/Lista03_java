@@ -1,4 +1,5 @@
-import modelos.Conversao;
+package br.edu.up;
+import br.edu.up.modelos.Conversao;
 
 public class Exercicio4 {
 

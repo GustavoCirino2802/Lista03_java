@@ -1,4 +1,5 @@
-import modelos.Margem;
+package br.edu.up;
+import br.edu.up.modelos.Margem;
 
 public class Exercicio6 {
 

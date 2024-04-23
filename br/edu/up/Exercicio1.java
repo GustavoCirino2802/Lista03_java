@@ -1,4 +1,5 @@
-import modelos.Aluno;
+package br.edu.up;
+import br.edu.up.modelos.Aluno;
 
 
 public class Exercicio1 {

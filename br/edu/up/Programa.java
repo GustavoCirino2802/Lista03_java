@@ -1,3 +1,4 @@
+package br.edu.up;
 public class Programa {
     public static void main(String[] args) {
         
@@ -6,7 +7,7 @@ public class Programa {
         //Exercicio3.executar();
         //Exercicio4.executar();
         //Exercicio5.executar();
-        Exercicio6.executar();
+        //Exercicio6.executar();
         //Exercicio7.executar();
         //Exercicio8.executar();
         //Exercicio9.executar();

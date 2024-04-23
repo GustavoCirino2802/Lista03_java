@@ -1,4 +1,4 @@
-package modelos;
+package br.edu.up.modelos;
 
 public class ConsumoMedio {
 

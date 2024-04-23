@@ -1,4 +1,5 @@
-import modelos.LojaMamaoAcucar;
+package br.edu.up;
+import br.edu.up.modelos.LojaMamaoAcucar;
 
 public class Exercicio5 {
 
