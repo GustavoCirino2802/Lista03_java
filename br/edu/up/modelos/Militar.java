@@ -1,41 +1,23 @@
 package br.edu.up.modelos;
 
-import br.edu.up.Prompt;
-
 public class Militar {
+    private String nome;
+    private String sexo;
+    private int idade;
+    private String saude;
 
-    private Integer idade;
-    private Character saude;
-
-    public Militar(Integer idade, Character saude){
+    public Militar(String nome, String sexo, int idade, String saude) {
+        this.nome = nome;
+        this.sexo = sexo;
         this.idade = idade;
         this.saude = saude;
     }
 
-    public Militar(Integer idade){
-        this.idade = idade;
+    private boolean isAptoParaServicoMilitar() {
+        return sexo.equalsIgnoreCase("masculino") && idade >= 18 && idade <= 25 && saude.equalsIgnoreCase("boa");
     }
 
-    public Militar(){
-
+    public boolean verificarAptidaoParaServicoMilitar() {
+        return isAptoParaServicoMilitar();
     }
-
-    private String calcApto(){
-        if (idade >= 18 && saude == 'S') {
-            Prompt.imprimir("Você esta apto a cumprir o serviço militar obrigatório!");
-        }
-        else {
-            Prompt.imprimir("Você não esta apto a cimprir o serviço militar obrigatório.");
-        }
-        return calcApto();
-    }
-
-    public String getcalcApto(){
-        return calcApto();
-    }
-
-
-
-
-
 }

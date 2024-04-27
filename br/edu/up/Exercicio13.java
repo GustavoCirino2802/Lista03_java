@@ -2,24 +2,23 @@ package br.edu.up;
 import br.edu.up.modelos.Militar;
 
 public class Exercicio13 {
-    public static void executar(){
+    public static void executar() {
+        Prompt.imprimir("Digite o número de pessoas:");
+        int N = Prompt.lerInteiro();
+        int totalApto = 0;
 
-        int x = Prompt.lerInteiro("Digite quantas pessoas vai querer ver: ");
+        for (int i = 0; i < N; i++) {
+            String nome = Prompt.lerLinha("Digite o nome da pessoa:");
+            String sexo = Prompt.lerLinha("Digite o sexo da pessoa:");
+            int idade = Prompt.lerInteiro("Digite a idade da pessoa:");
+            String saude = Prompt.lerLinha("Digite a saúde da pessoa:");
 
-        String[] nome = new String[x];
-        Character[] sexo = new Character[x];
-
-        for (int i = x; i <= x ; i++) {
-        String nome = Prompt.lerLinha("Digite o seu nome: ");
-        Character sexo = Prompt.lerCaractere("Digite seu sexo (M/F): ");
+            Militar pessoa = new Militar(nome, sexo, idade, saude);
+            if (pessoa.verificarAptidaoParaServicoMilitar()) {
+                totalApto++;
+            }
         }
 
-        Militar militar = new Militar();
-
-        Prompt.separador();
-        Prompt.imprimir(militar);
-        
-        
+        Prompt.imprimir("Total de pessoas aptas para o serviço militar: " + totalApto);
     }
-
 }
