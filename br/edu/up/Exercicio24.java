@@ -5,7 +5,7 @@ public class Exercicio24 {
     public static void executar(){
         Estudante nota = new Estudante();
 
-        Prompt.imprimir("Digite a nota do Trabalho de Laboratório, da Avaliação Semestral e a do Exame final:");
+        Prompt.imprimir("Digite a nota do Trabalho de Laboratório, da Avaliação do Semestre e a do Exame final:");
         for(int i = 0; i < 3; i ++ ){
             nota.getNota()[i] = Prompt.lerDecimal("Nota " + (i+1) + ":");
         }
